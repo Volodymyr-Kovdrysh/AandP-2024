@@ -1,6 +1,5 @@
-read
-write
+Write HomeWork!!
 sleep
-Read the Book
-Write HomeWork
 add comment
+Read the book!
+Test Todo
