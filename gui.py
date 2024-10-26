@@ -28,7 +28,10 @@ window = sg.Window("My To-Do App",
 
 while True:
     event, values = window.read(timeout=200)
-    window['clock'].update(value=time.strftime("%b %d %Y %H:%M:%S"))
+    if event:
+        window['clock'].update(value=time.strftime("%b %d %Y %H:%M:%S"))
+    else:
+        break
     match event:
         case "Add":
             todos = functions.get_todos()
